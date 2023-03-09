@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "slack-export-files-downloader"
+version = "0.1.0"
+description = ""
+authors = ["Morné Chamberlain <morne@leaping-rhino.com>"]
+readme = "README.md"
+packages = [{include = "slack_export_files_downloader"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+requests = "^2.28.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+slack-export-files-downloader = "slack_export_files_downloader.cli:main"
